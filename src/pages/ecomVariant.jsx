@@ -1,11 +1,10 @@
 import React from 'react'
 
-const ecomVariant = () => {
+const EcomVariant = () => {
     return (
         <div>
-
         </div>
     )
 }
 
-export default ecomVariant
+export default EcomVariant

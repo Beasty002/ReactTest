@@ -1,10 +1,18 @@
 import React from 'react'
+import { Routes, Route } from 'react-router-dom'
+import EcomVariant from './pages/ecomVariant'
+import SideBar from './components/sideBar'
 
 const App = () => {
   return (
-    <div>
-      as
-    </div>
+    <>
+      <SideBar />
+      <main>
+        <Routes>
+          <Route path='/' element={<EcomVariant />} />
+        </Routes>
+      </main>
+    </>
   )
 }
 
