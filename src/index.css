@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", serif;
+    color: rgb(0, 15, 59);
+
+
+}
+
+.active {
+    background-color: #f7f7f7;
+}
