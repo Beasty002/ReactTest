@@ -144,7 +144,6 @@ const EcomVariant = () => {
             </div>
 
 
-            <hr className='my-4 mb-6' />
             {/* selecting the options now................................................ */}
 
 
@@ -154,21 +153,21 @@ const EcomVariant = () => {
                 {
                     selectedCategories.map((category, idx) => (
                         <div key={idx}>
-                            <h4 className="text-md font-semibold mb-2">
+                            <h4 className="text-md font-medium mb-2">
                                 {
                                     category.charAt(0).toUpperCase() + category.slice(1)
                                 } Options
                             </h4>
 
-                            <div className='flex flex-wrap gap-3'>
+                            <div className='flex flex-wrap gap-x-4 gap-y-3'>
                                 {
                                     variantList[category].map((option, idx) => (
-                                        <label >
-                                            <input type='checkbox' checked={selectedOptions[category]?.includes(option)}
+                                        <div className='mb-5'>
+                                            <label htmlFor={idx + option} className={`px-3 py-1 rounded-sm cursor-pointer ${selectedOptions[category]?.includes(option) ? "bg-blue-400 text-white" : "bg-gray-200 text-gray-500"}`}>{option}</label>
+                                            <input id={idx + option} className='hidden' type='checkbox' checked={selectedOptions[category]?.includes(option)}
                                                 onChange={() => handleOptionChange(category, option)}
                                             />
-                                            {option}
-                                        </label>
+                                        </div>
 
                                     ))
                                 }
@@ -180,16 +179,16 @@ const EcomVariant = () => {
 
             </div>
 
-            <hr className='my-4 mb-6' />
             {/* Time for product combinationssss................................................ */}
 
 
             <section>
-                <div className='grid grid-cols-[auto_3fr_1fr_1fr_1fr] gap-4 border-b pb-2 justify-center'>
+                <div className='grid grid-cols-[auto_3fr_1fr_1fr_1fr_1fr] gap-4 border-b pb-2 justify-center'>
                     <input type="checkbox" />
                     <p>Combination</p>
                     <p>Cost Price</p>
                     <p>Sales Price</p>
+                    <p>Image</p>
                     <p>Actions</p>
                 </div>
 
