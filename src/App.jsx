@@ -1,8 +1,9 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import EcomVariant from './pages/ecomVariant'
+import EcomVariant from './pages/EcomVariant'
 import SideBar from './components/sideBar'
 import Test from './pages/Test'
+import Barcodegenerator from './pages/Barcodegenerator'
 
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
         <Routes>
           <Route path='/' element={<EcomVariant />} />
           <Route path='/test' element={<Test />} />
+          <Route path='/barcode-generator' element={<Barcodegenerator />} />
         </Routes>
       </main>
     </div>

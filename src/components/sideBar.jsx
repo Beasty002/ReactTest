@@ -7,6 +7,7 @@ const SideBar = () => {
             <ul className='h-full flex flex-col gap-4 justify-center bg-red-200 pl-4 [&>*]:pl-2'>
                 <NavLink to={'/'}  >Product Variant</NavLink>
                 <NavLink to={'/test'}>Test </NavLink>
+                <NavLink to={'/barcode-generator'}>Barcode </NavLink>
 
             </ul>
         </div >
