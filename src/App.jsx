@@ -4,6 +4,7 @@ import EcomVariant from './pages/EcomVariant'
 import SideBar from './components/sideBar'
 import Test from './pages/Test'
 import Barcodegenerator from './pages/Barcodegenerator'
+import TicTacToe from './pages/TicTacToe'
 
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
           <Route path='/' element={<EcomVariant />} />
           <Route path='/test' element={<Test />} />
           <Route path='/barcode-generator' element={<Barcodegenerator />} />
+          <Route path='/tictactoe' element={<TicTacToe />} />
         </Routes>
       </main>
     </div>

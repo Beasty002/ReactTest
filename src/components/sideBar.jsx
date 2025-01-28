@@ -8,6 +8,7 @@ const SideBar = () => {
                 <NavLink to={'/'}  >Product Variant</NavLink>
                 <NavLink to={'/test'}>Test </NavLink>
                 <NavLink to={'/barcode-generator'}>Barcode </NavLink>
+                <NavLink to={'/tictactoe'}>TicTacToe </NavLink>
 
             </ul>
         </div >
