@@ -5,6 +5,9 @@ import SideBar from './components/sideBar'
 import Test from './pages/Test'
 import Barcodegenerator from './pages/Barcodegenerator'
 import TicTacToe from './pages/TicTacToe'
+import Tabuser from './pages/Tabuser'
+import Testing2 from './pages/Testing2'
+import ActualTabs from './pages/ActualTabs'
 
 
 const App = () => {
@@ -17,6 +20,9 @@ const App = () => {
           <Route path='/test' element={<Test />} />
           <Route path='/barcode-generator' element={<Barcodegenerator />} />
           <Route path='/tictactoe' element={<TicTacToe />} />
+          <Route path='/tabs' element={<Tabuser />} />
+          <Route path='/testing2' element={<Testing2 />} />
+          <Route path='/actualTabs' element={<ActualTabs />} />
         </Routes>
       </main>
     </div>

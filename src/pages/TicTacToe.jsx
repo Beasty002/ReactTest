@@ -72,6 +72,7 @@ function Board() {
 
     return (
         <>
+           
             <div>{status}</div>
             <section className='grid grid-rows-3 gap-0 w-64 h-64'>
                 <div className='grid grid-cols-3 '>
