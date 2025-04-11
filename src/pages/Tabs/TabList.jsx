@@ -1,8 +1,11 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useContext, useEffect, useRef } from 'react'
 import Tab from './Tab'
+import { TabsContext } from '../../hooks/TabsContext'
 
-const TabList = ({ tabDetails, active, setActive, tabRef }) => {
+
+const TabList = ({ tabDetails }) => {
     const underLineRef = useRef(null)
+    const { tabRef, active } = useContext(TabsContext)
     useEffect(() => {
         const current = tabRef.current[active]
         if (current && underLineRef.current) {
@@ -14,7 +17,7 @@ const TabList = ({ tabDetails, active, setActive, tabRef }) => {
         <section className='relative'>
             <div className='flex w-full justify-between px-6 py-2 border rounded-md '>
                 {
-                    tabDetails.map(item => <Tab title={item.title} id={item.id} active={active} setActive={setActive} tabRef={tabRef} />)
+                    tabDetails.map(item => <Tab title={item.title} id={item.id} />)
                 }
                 <span
                     ref={underLineRef}

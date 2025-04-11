@@ -1,11 +1,10 @@
-import React, { useRef, useState, useEffect } from 'react'
+import React from 'react'
 import TabList from './Tabs/TabList'
 import TabPanels from './Tabs/TabPanels'
+import { TabsProvider } from '../hooks/TabsContext';
 
 const ActualTabs = () => {
-    const [active, setActive] = useState(1)
-    const ref = useRef()
-    const tabRef = useRef([])
+
     const tabDetails = [
         {
             id: 1,
@@ -37,8 +36,12 @@ const ActualTabs = () => {
 
     return (
         <>
-            <TabList tabRef={tabRef} tabDetails={tabDetails} active={active} setActive={setActive} />
-            <TabPanels tabDetails={tabDetails} active={active} setActive={setActive} />
+            <TabsProvider>
+
+                <TabList tabDetails={tabDetails} />
+                <TabPanels tabDetails={tabDetails} />
+
+            </TabsProvider>
         </>
     )
 }

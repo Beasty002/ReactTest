@@ -11,7 +11,7 @@ const SideBar = () => {
                 <NavLink to={'/tictactoe'}>TicTacToe </NavLink>
                 <NavLink to={'/tabs'}>Tabs </NavLink>
                 <NavLink to={'/testing2'}>Testing 2 </NavLink>
-                <NavLink to={'/actualTabs'}>Actual tabs </NavLink>
+                <NavLink to={'/actualTabs'}>Tabs Components </NavLink>
             </ul>
         </div >
     )

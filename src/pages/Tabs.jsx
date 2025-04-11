@@ -20,7 +20,7 @@ export function TabsList({ children }) {
     const { activeIndex, tabRefs } = useContext(TabsContext);
     useEffect(() => {
         const interval = setInterval(() => {
-            console.log('Tab Ref:', tabRefs.current);
+            console.log('Tab Ref:', tabRef.current);
         }, 4000);
 
         return () => clearInterval(interval); // clean up
