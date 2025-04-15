@@ -16,3 +16,257 @@
 .active {
     background-color: #f7f7f7;
 }
+
+
+
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header {
+    margin-bottom: 30px;
+  }
+  
+  h1 {
+    font-size: 28px;
+    color: #2c3e50;
+  }
+  
+  h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #2c3e50;
+  }
+  
+  h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  button {
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.1s;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  /* Layout */
+  main {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .products-container {
+    flex: 3;
+  }
+  
+  .cart-sidebar {
+    flex: 1;
+    min-width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    align-self: flex-start;
+    position: sticky;
+    top: 20px;
+  }
+  
+  /* Products Grid */
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .price {
+    color: #2c3e50;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .quantity-btn {
+    background-color: #e9ecef;
+    color: #495057;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  
+  .quantity {
+    padding: 0 15px;
+    font-weight: bold;
+  }
+  
+  .add-to-cart-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: auto;
+  }
+  
+  /* Cart Styles */
+  .cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e9ecef;
+  }
+  
+  .clear-cart-btn {
+    background: none;
+    color: #e74c3c;
+    padding: 5px;
+  }
+  
+  .empty-cart {
+    color: #6c757d;
+    font-style: italic;
+    text-align: center;
+    padding: 30px 0;
+  }
+  
+  .cart-items {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+  }
+  
+  .cart-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 0;
+    border-bottom: 1px solid #e9ecef;
+  }
+  
+  .item-info {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .item-info img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .item-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .item-actions .quantity-controls {
+    margin-bottom: 0;
+  }
+  
+  .item-actions .quantity-controls input {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #e9ecef;
+    padding: 5px;
+  }
+  
+  .remove-btn {
+    background: none;
+    color: #e74c3c;
+    padding: 5px;
+  }
+  
+  /* Cart Summary */
+  .cart-summary {
+    border-top: 1px solid #e9ecef;
+    padding-top: 15px;
+  }
+  
+  .summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .total {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .checkout-btn {
+    background-color: #27ae60;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+    }
+    
+    .cart-sidebar {
+      position: static;
+      width: 100%;
+    }
+  }
+

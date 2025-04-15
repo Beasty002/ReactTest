@@ -10,8 +10,11 @@ const SideBar = () => {
                 <NavLink to={'/barcode-generator'}>Barcode </NavLink>
                 <NavLink to={'/tictactoe'}>TicTacToe </NavLink>
                 <NavLink to={'/tabs'}>Tabs </NavLink>
-                <NavLink to={'/testing2'}>Testing 2 </NavLink>
                 <NavLink to={'/actualTabs'}>Tabs Components </NavLink>
+                <NavLink to={'/cartTest'}>Cart Test </NavLink>
+                <NavLink to={'/cart'}>Cart</NavLink>
+                <NavLink to={'/reactMemo'}>React Memo</NavLink>
+
             </ul>
         </div >
     )
