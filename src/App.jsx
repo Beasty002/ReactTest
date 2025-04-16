@@ -10,6 +10,9 @@ import CartTest from './pages/CartTest'
 import SideBar from './components/SideBar'
 import Cart from './pages/Cart'
 import ReactMemo from './pages/ReactMemo'
+import UseMemoReact from './pages/UseMemoReact'
+import UseCallBackReact from './pages/UseCallBackReact'
+import AsyncAwait from './pages/AsyncAwaint'
 
 
 const App = () => {
@@ -27,6 +30,9 @@ const App = () => {
           <Route path='/cartTest' element={<CartTest />} />
           <Route path='/cart' element={<Cart />} />
           <Route path='/reactMemo' element={<ReactMemo />} />
+          <Route path='/useMemoReact' element={<UseMemoReact />} />
+          <Route path='/useCallbackReact' element={<UseCallBackReact />} />
+          <Route path='/asyncAwait' element={<AsyncAwait />} />
         </Routes>
       </main>
     </div>

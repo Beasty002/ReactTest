@@ -2,7 +2,6 @@ import React, { useRef, useState } from 'react';
 import TestChild from './TestingKit/TestChild';
 
 const ReactMemo = () => {
-    const ref = useRef(0)
   const [count, setCount] = useState(0);
   const [count2, setCount2] = useState(0);
 

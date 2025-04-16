@@ -14,6 +14,9 @@ const SideBar = () => {
                 <NavLink to={'/cartTest'}>Cart Test </NavLink>
                 <NavLink to={'/cart'}>Cart</NavLink>
                 <NavLink to={'/reactMemo'}>React Memo</NavLink>
+                <NavLink to={'/useMemoReact'}>Use Memo</NavLink>
+                <NavLink to={'/useCallbackReact'}>Use Callback </NavLink>
+                <NavLink to={'/asyncAwait'}>AsyncAwait </NavLink>
 
             </ul>
         </div >

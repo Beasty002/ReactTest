@@ -11,4 +11,4 @@ const TestChild = ({ name, count , something  }) => {
     )
 }
 
-export default TestChild; //props ya yesko state change vaye maatra change hunxa yo
+export default memo(TestChild); //props ya yesko state change vaye maatra change hunxa yo
