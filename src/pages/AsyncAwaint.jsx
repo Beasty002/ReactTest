@@ -6,10 +6,10 @@ const slowFunction = (num) => {
       setTimeout(() => {
         let result = num;
         for (let i = 0; i < 800000000; i++) {
-          result += 0; // Simulated work
+          result += 0; 
         }
         resolve(result + 1);
-      }, 0); // Let React render first
+      }, 0);
     });
   };
   

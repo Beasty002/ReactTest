@@ -13,6 +13,7 @@ import ReactMemo from './pages/ReactMemo'
 import UseMemoReact from './pages/UseMemoReact'
 import UseCallBackReact from './pages/UseCallBackReact'
 import AsyncAwait from './pages/AsyncAwaint'
+import VarChecker from './pages/VarChecker'
 
 
 const App = () => {
@@ -33,6 +34,7 @@ const App = () => {
           <Route path='/useMemoReact' element={<UseMemoReact />} />
           <Route path='/useCallbackReact' element={<UseCallBackReact />} />
           <Route path='/asyncAwait' element={<AsyncAwait />} />
+          <Route path='/varChecker' element={<VarChecker />} />
         </Routes>
       </main>
     </div>
